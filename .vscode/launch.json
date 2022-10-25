@@ -1,8 +1,8 @@
 {
   "configurations": [
     {
-      "command": "npm start",
-      "name": "Run npm start",
+      "command": "pnpm nx serve ku-api",
+      "name": "ku-api:red 3000",
       "request": "launch",
       "type": "node-terminal"
     }

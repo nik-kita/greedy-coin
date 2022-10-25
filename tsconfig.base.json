@@ -4,17 +4,33 @@
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
-    "moduleResolution": "node",
+    "moduleResolution": "NodeNext",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "ES2022",
     "module": "esnext",
-    "lib": ["ES2022", "dom"],
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@coin-rime/config": [
+        "libs/config/src/index.ts"
+      ],
+      "@coin-rime/ku-http-api": [
+        "libs/ku-http-api/src/index.ts"
+      ],
+      "@coin-rime/types": [
+        "libs/types/src/index.ts"
+      ]
+    }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

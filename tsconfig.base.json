@@ -4,14 +4,14 @@
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "Node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "ES2022",
+    "target": "ES2021",
     "module": "esnext",
     "lib": [
-      "ES2022",
+      "ES2021",
       "DOM"
     ],
     "skipLibCheck": true,

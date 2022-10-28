@@ -4,7 +4,7 @@ import { GetAccountsReq } from './account-info/account-info.get.api';
 import { AccountLedgersParamsDto, GetAccountLedgersReq } from './account-ledgers/account-ledgers.get.api';
 import { Level2OrderBookReq } from './order-book/level-2.get.api';
 import { GetOrderInfoReq } from './order-info/order-info.get.api';
-import { CurrencyPair } from '@coin-rime/types';
+import { CurrencyPair } from '@greedy-coin/types';
 
 export class GetReq {
     public static [GetEndpointEnum.ACCOUNTS] = new GetAccountsReq();

@@ -3,7 +3,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 /* eslint-disable */
 
 @Component({
-  selector: 'coin-rime-nx-welcome',
+  selector: 'greedy-coin-nx-welcome',
   template: `
 
      <!--
@@ -799,7 +799,7 @@ nx affected:e2e</pre>
         </p>
       </div>
     </div>
-  
+
 `,
   styles: [
   ],

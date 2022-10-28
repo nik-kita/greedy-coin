@@ -1,4 +1,4 @@
-import { ConfigType } from '@coin-rime/types';
+import { ConfigType } from '@greedy-coin/types';
 
 declare global {
   namespace NodeJS {

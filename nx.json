@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "coin-rime",
+  "npmScope": "greedy-coin",
   "affected": {
     "defaultBase": "master"
   },

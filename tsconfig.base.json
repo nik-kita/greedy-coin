@@ -18,13 +18,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@coin-rime/config": [
+      "@greedy-coin/config": [
         "libs/config/src/index.ts"
       ],
-      "@coin-rime/ku-http-api": [
+      "@greedy-coin/ku-http-api": [
         "libs/ku-http-api/src/index.ts"
       ],
-      "@coin-rime/types": [
+      "@greedy-coin/types": [
         "libs/types/src/index.ts"
       ]
     }

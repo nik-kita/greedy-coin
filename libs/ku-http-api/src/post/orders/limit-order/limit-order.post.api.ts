@@ -3,7 +3,7 @@ import { BaseMethod } from '../../../common/base-method.api';
 import { PostEndpointEnum } from '../../../enums/endpoint.enum';
 import { TOrderRes } from '../orders.type';
 import { TLimitOrderBodyDto } from './limit-order.type';
-import { CurrencyPair } from '@coin-rime/types';
+import { CurrencyPair } from '@greedy-coin/types';
 
 export class PostOrderLimitReq extends BaseMethod<TOrderRes, any, TLimitOrderBodyDto> {
     constructor() {

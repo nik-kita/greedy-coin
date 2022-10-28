@@ -1,6 +1,6 @@
 import { BaseMethod } from '../../common/base-method.api';
 import { DeleteEndpointEnum } from '../../enums/endpoint.enum';
-import { CurrencyPair } from '@coin-rime/types';
+import { CurrencyPair } from '@greedy-coin/types';
 
 export type CancelAllOrdersResDto = {
     cancelledOrderIds: string[],

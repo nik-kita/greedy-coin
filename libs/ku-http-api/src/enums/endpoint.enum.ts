@@ -1,4 +1,4 @@
-import { ProjectConfigByDotenvSystem } from '@coin-rime/config';
+import { ProjectConfigByDotenvSystem } from '@greedy-coin/config';
 
 const { NODE_ENV } = ProjectConfigByDotenvSystem;
 

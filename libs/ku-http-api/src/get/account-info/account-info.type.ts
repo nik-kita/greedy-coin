@@ -1,4 +1,4 @@
-import { CurrencyType } from '@coin-rime/types';
+import { CurrencyType } from '@greedy-coin/types';
 
 export type AccountInfoResDto = [{
   id: string,

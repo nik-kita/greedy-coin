@@ -27,7 +27,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "coin-rime",
+            "prefix": "greedy-coin",
             "style": "kebab-case"
           }
         ]

@@ -1,4 +1,4 @@
-import { anny } from '@coin-rime/types';
+import { anny } from '@greedy-coin/types';
 import { plainToInstance } from 'class-transformer';
 import { validateSync } from 'class-validator';
 import { Config } from './config';

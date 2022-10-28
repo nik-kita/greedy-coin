@@ -1,4 +1,4 @@
-import { CurrencyPair } from '@coin-rime/types';
+import { CurrencyPair } from '@greedy-coin/types';
 
 export type TOrderRes = {
   orderId: string,

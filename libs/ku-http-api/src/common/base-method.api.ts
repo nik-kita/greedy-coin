@@ -1,4 +1,4 @@
-import { anny } from '@coin-rime/types';
+import { anny } from '@greedy-coin/types';
 import axios from 'axios';
 import { HOST } from '../enums/endpoint.enum';
 import { SignGenerator } from './sign-generator.api';

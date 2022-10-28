@@ -6,7 +6,7 @@ import { PostBulletPrivateReq } from './bullet/bullet.post.api';
 import { LIMIT } from './orders/limit-order/limit-order.post.api';
 import { TMarketOrderBody } from './orders/market-order/market-order.type';
 import { TOrderRes } from './orders/orders.type';
-import { CurrencyPair } from '@coin-rime/types';
+import { CurrencyPair } from '@greedy-coin/types';
 
 class PostOrderMarketReq extends BaseMethod<TOrderRes, any, TMarketOrderBody> {
     constructor() {

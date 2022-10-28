@@ -2,7 +2,7 @@ import * as crypto from 'crypto';
 import * as moment from 'moment';
 import * as QueryString from 'qs';
 import { MethodType } from '../enums/endpoint.enum';
-import { ProjectConfigByDotenvSystem } from '@coin-rime/config';
+import { ProjectConfigByDotenvSystem } from '@greedy-coin/config';
 
 const { API_PASSPHRASE, API_SECRET, API_KEY } = ProjectConfigByDotenvSystem;
 

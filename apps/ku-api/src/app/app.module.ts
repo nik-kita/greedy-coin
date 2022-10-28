@@ -1,4 +1,4 @@
-import { ProjectConfigByNestSystem } from '@coin-rime/config';
+import { ProjectConfigByNestSystem } from '@greedy-coin/config';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';

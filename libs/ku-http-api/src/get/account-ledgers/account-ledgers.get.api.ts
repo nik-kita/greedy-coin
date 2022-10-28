@@ -1,6 +1,6 @@
 import { BaseMethod } from '../../common/base-method.api';
 import { GetEndpointEnum } from '../../enums/endpoint.enum';
-import { CurrencyType } from '@coin-rime/types';
+import { CurrencyType } from '@greedy-coin/types';
 
 export type AccountLedgersResDto = {
     // TODO

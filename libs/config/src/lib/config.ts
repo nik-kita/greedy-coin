@@ -1,4 +1,4 @@
-import { ConfigType, EnvColor } from '@coin-rime/types';
+import { ConfigType, EnvColor } from '@greedy-coin/types';
 import { IsIn, IsNotEmpty, IsString } from 'class-validator';
 
 export class Config implements ConfigType {

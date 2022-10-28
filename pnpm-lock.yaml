@@ -22,6 +22,7 @@ specifiers:
   '@nestjs/platform-express': ^9.0.0
   '@nestjs/schematics': ^9.0.0
   '@nestjs/testing': ^9.0.0
+  '@ngrx/store': ^14.3.2
   '@nrwl/angular': ^15.0.2
   '@nrwl/cli': 15.0.2
   '@nrwl/cypress': 15.0.2
@@ -70,6 +71,7 @@ dependencies:
   '@nestjs/common': 9.1.6_x6yqyveuahcdef4z4mxykmuv6a
   '@nestjs/core': 9.1.6_bx3wiubfryfbvpzqwr6ml4ajpu
   '@nestjs/platform-express': 9.1.6_6whalgrsvisgjemghedgkfq7dm
+  '@ngrx/store': 14.3.2_mhxwww7bfpzvikl64i6lpyc2ua
   axios: 1.1.3
   class-transformer: 0.5.1
   class-validator: 0.13.2
@@ -3479,6 +3481,17 @@ packages:
       '@nestjs/platform-express': 9.1.6_6whalgrsvisgjemghedgkfq7dm
       tslib: 2.4.0
     dev: true
+
+  /@ngrx/store/14.3.2_mhxwww7bfpzvikl64i6lpyc2ua:
+    resolution: {integrity: sha512-XGHjr0arh6gClo8Ce+xqJLvW9PkeXPW2tCo9Z5qMtHFI/z5dUppLVKGmMgD/fQBDyoqWTK5xu+89tDkdeZfRjQ==}
+    peerDependencies:
+      '@angular/core': ^14.0.0
+      rxjs: ^6.5.3 || ^7.5.0
+    dependencies:
+      '@angular/core': 14.2.7_rxjs@7.5.7+zone.js@0.11.8
+      rxjs: 7.5.7
+      tslib: 2.4.0
+    dev: false
 
   /@ngtools/webpack/14.2.6_z34ypwcp5iqzf5bbvvgqj3cage:
     resolution: {integrity: sha512-HdfoHLGPzyP135BOlvTQcpeWisVfiH0u40YNTBVK3QAsrLnY17e2QG5BWBOrVYipRu1975cZtTC9rPjcCY8aLQ==}

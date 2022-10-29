@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import { RouterModule } from '@angular/router';
-import { appRoutes } from './app.routes';
-import { StoreModule } from '@ngrx/store';
-import { handlebarReducer } from './state/handlebar/handlebar.reducer';
 import { UiState } from '@greedy-coin/types';
+import { StoreModule } from '@ngrx/store';
+import { AppComponent } from './app.component';
+import { RoutingModule } from './routing.module';
+import { handlebarReducer } from './state/handlebar/handlebar.reducer';
 
 @NgModule({
   declarations: [
@@ -13,10 +12,10 @@ import { UiState } from '@greedy-coin/types';
   ],
   imports: [
     BrowserModule,
+    RoutingModule,
     StoreModule.forRoot<UiState>({
       handlebar: handlebarReducer,
     }),
-    RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' })
   ],
   providers: [],
   bootstrap: [AppComponent]

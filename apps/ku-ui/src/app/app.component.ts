@@ -6,6 +6,8 @@ import { map, Observable } from 'rxjs';
 @Component({
   selector: 'greedy-coin-root',
   template: `
+    <router-outlet></router-outlet>
+    <hr/>
     {{ title }}
     <hr/>
     {{ hello$ | async }}

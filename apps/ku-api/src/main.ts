@@ -11,7 +11,7 @@ async function bootstrap() {
   const host = config.get('KU_API_HOST');
   const microHost = host.split(/https?:\/\//)[1];
   const port = config.get('KU_API_PORT');
-  const microPort = +String(port)[0].repeat(4);
+  const microPort = port; // +String(port)[0].repeat(4);
 
   app.connectMicroservice({
     transport: Transport.TCP,
@@ -24,10 +24,10 @@ async function bootstrap() {
   await app.startAllMicroservices();
   await app.listen(port);
 
-  const logger = new Logger('KU_API:main');
+  const logger = new Logger('KU_API::main');
 
-  logger.log(`KU_API microservice is started. ${microHost}:${microPort}`);
-  logger.log(`KU_API server is started. ${host}:${port}`);
+  logger.log(`Microservice => ${microHost}:${microPort}`);
+  logger.log(`Server =======> ${host}:${port}`);
 }
 
 bootstrap();

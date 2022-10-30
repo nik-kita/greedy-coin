@@ -26,5 +26,9 @@ export class Config implements ConfigType {
 
   @Transform(({ value }) => +value)
   @IsNumber()
-  PORT = 3000;
+  KU_API_PORT = 3000;
+
+  @IsString()
+  @IsNotEmpty()
+  KU_API_HOST = 'http://0.0.0.0';
 }

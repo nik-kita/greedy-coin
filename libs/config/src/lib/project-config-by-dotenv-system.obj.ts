@@ -3,6 +3,9 @@ import { Config } from './config';
 import { config } from 'dotenv';
 import { getPathToEnv } from './get-path-to-env';
 
-config({ path: getPathToEnv() });
 
-export const ProjectConfigByDotenvSystem = configValidate(process.env) as Config;
+export const ProjectConfigByDotenvSystem = (envPath?: string) => {
+  config({ path: envPath || getPathToEnv() });
+
+  return configValidate(process.env) as Config;
+};

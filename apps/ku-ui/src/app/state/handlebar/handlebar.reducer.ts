@@ -1,7 +1,7 @@
-import { HandleBar } from '@greedy-coin/types';
+import { HandlebarState } from '@greedy-coin/types';
 import { createReducer, on } from '@ngrx/store';
 
-const initialState: HandleBar = {
+const initialState: HandlebarState = {
   hello: 'world'
 };
 

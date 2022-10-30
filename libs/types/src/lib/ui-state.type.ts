@@ -1,5 +1,5 @@
-import { HandleBar } from './handlebar.type';
+import { HandlebarState } from './state/handlebar-state.type';
 
 export type UiState = {
-  handlebar: HandleBar,
+  handlebar: HandlebarState,
 }

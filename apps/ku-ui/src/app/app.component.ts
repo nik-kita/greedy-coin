@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HandleBar, UiState } from '@greedy-coin/types';
+import { HandlebarState, UiState } from '@greedy-coin/types';
 import { Store } from '@ngrx/store';
 import { map, Observable } from 'rxjs';
 
@@ -15,9 +15,9 @@ import { map, Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   title = 'ku-ui';
-  handlebar$: Observable<HandleBar>;
+  handlebar$: Observable<HandlebarState>;
 
-  hello$!: Observable<HandleBar['hello']>;
+  hello$!: Observable<HandlebarState['hello']>;
 
   constructor(store: Store<UiState>) {
     this.handlebar$ = store.select('handlebar');

@@ -1,4 +1,4 @@
 *
 !.gitignore
-!greedy-coin.code-workspace
+!*.code-workspace
 !launch.json

@@ -1,0 +1,38 @@
+{
+	"folders": [
+    {
+      "path": "..",
+      "name": "👑 root"
+    },
+		{
+			"path": "../apps/ku-api/src",
+      "name": "🚀 ku-api",
+		},
+    {
+			"path": "../apps/ku-ui/src",
+      "name": "🚀 ku-ui",
+      "settings": {
+
+      }
+		},
+    {
+      "path": "../libs/types/src",
+      "name": "📚 types"
+    },
+    {
+      "path": "../libs/ku-http-api/src",
+      "name": "📚 ku-http-api"
+    },
+    {
+      "path": "../libs/config/src",
+      "name": "📚 config"
+    },
+    {
+      "path": "../libs/utils/src",
+      "name": "📚 utils"
+    }
+  ],
+  "settings": {
+    "workbench.colorTheme": "Default Light+"
+  }
+}

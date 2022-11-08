@@ -2,7 +2,6 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react';
 import './app.module.css';
-import NxWelcome from "./nx-welcome";
 
 import { Route, Routes, Link } from 'react-router-dom';
 
@@ -11,9 +10,7 @@ export function App() {
 
   return (
     <>
-      <NxWelcome title="ku-ui"/>
       <div />
-    
     {/* START: routes */}
     {/* These routes and navigation have been generated for you */}
     {/* Feel free to move and update them to fit your needs */}

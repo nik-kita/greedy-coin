@@ -1,8 +1,8 @@
-import { HandlebarState } from '@greedy-coin/types';
-import { createReducer, on } from '@ngrx/store';
+import { EnvColor, HandlebarState } from '@greedy-coin/types';
+import { createReducer } from '@ngrx/store';
 
 const initialState: HandlebarState = {
-  hello: 'world'
+  envColor: EnvColor.RED
 };
 
 export const handlebarReducer = createReducer(initialState);

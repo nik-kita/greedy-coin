@@ -1,3 +1,5 @@
+import { EnvColor } from '../env-color.enum';
+
 export type HandlebarState = {
-  hello: string,
+  envColor: EnvColor,
 };

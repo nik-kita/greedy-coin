@@ -63,7 +63,6 @@
       "{workspaceRoot}/babel.config.json"
     ]
   },
-  "defaultProject": "ku-api",
   "generators": {
     "@nrwl/angular:application": {
       "style": "css",

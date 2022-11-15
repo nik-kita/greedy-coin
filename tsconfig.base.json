@@ -23,9 +23,6 @@
       ],
       "@greedy-coin/types": [
         "libs/types/src/index.ts"
-      ],
-      "@greedy-coin/utils": [
-        "libs/utils/src/index.ts"
       ]
     }
   },

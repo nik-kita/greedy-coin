@@ -21,9 +21,6 @@
       "@greedy-coin/config": [
         "libs/config/src/index.ts"
       ],
-      "@greedy-coin/ku-http-api": [
-        "libs/ku-http-api/src/index.ts"
-      ],
       "@greedy-coin/types": [
         "libs/types/src/index.ts"
       ],

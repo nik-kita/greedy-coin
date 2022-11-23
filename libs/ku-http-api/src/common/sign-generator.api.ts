@@ -4,7 +4,7 @@ import * as QueryString from 'qs';
 import { MethodType } from '../enums/endpoint.enum';
 import { ProjectConfigByDotenvSystem } from '@greedy-coin/config';
 
-const { API_PASSPHRASE, API_SECRET, API_KEY } = ProjectConfigByDotenvSystem;
+const { API_PASSPHRASE, API_SECRET, API_KEY } = ProjectConfigByDotenvSystem();
 
 export class SignGenerator {
     // eslint-disable-next-line no-use-before-define

@@ -33,6 +33,9 @@
     }
   ],
   "settings": {
-    "workbench.colorTheme": "Default Light+"
+    "workbench.colorTheme": "Default Light+",
+    "cSpell.words": [
+      "anny"
+    ]
   }
 }

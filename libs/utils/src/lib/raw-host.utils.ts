@@ -1,7 +1,7 @@
 export function rawHost(host: `${'http' | 'https'}${string}`) {
-  const splited = host.split(/https?:\/\//);
+  const splitted = host.split(/https?:\/\//);
 
-  return splited.length === 2
-    ? splited[1]
-    : splited[0];
+  return splitted.length === 2
+    ? splitted[1]
+    : splitted[0];
 }

@@ -1,7 +1,7 @@
-import { CurrencyUsdt } from '../../general/currency.general-type';
 import { WsSubjectEnum } from './enums/ws-subject.enum';
 import { WsSubscriptionType } from './enums/ws-subscription.type';
 import { WsPub } from './common/ws-pub';
+import { CurrencyUsdt } from '../currency.type';
 
 export type SubMarketTicker = WsPub<{
     topic: string,

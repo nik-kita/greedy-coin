@@ -1,8 +1,8 @@
-import { CurrencyPair } from '../../general/currency.general-type';
 import { WsSubjectEnum } from './enums/ws-subject.enum';
 import { WsSubscriptionType } from './enums/ws-subscription.type';
 import { WsPub } from './common/ws-pub';
 import { WsSub } from './common/ws-sub';
+import { CurrencyPair } from '../currency.type';
 
 const level2with5best = '/spotMarket/level2Depth5:' as const;
 const level2with50best = '/spotMarket/level2Depth50:' as const;

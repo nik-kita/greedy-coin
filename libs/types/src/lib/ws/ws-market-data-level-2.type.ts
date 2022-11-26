@@ -1,8 +1,8 @@
-import { CurrencyPair } from '../../general/currency.general-type';
 import { WsSubjectEnum } from './enums/ws-subject.enum';
 import { WsSubscriptionType } from './enums/ws-subscription.type';
 import { WsPub } from './common/ws-pub';
 import { WsSub } from './common/ws-sub';
+import { CurrencyPair } from '../currency.type';
 
 const marketDataLevel2 = '/market/level2:' as const;
 type MarketDataLevel2Url = `${typeof marketDataLevel2}${string}`;

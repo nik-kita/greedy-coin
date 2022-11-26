@@ -12,7 +12,7 @@ async function bootstrap() {
   const host = config.get('KU_API_HOST');
   const microHost = rawHost(host);
   const port = config.get('KU_API_PORT');
-  const microPort = port; // +String(port)[0].repeat(4);
+  const microPort = port;
 
   app.connectMicroservice({
     transport: Transport.TCP,

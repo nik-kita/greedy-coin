@@ -9,6 +9,10 @@
       "name": "🚀 ku-api",
 		},
     {
+      "path": "../apps/stateman-micro",
+      "name": "📯 stateman-micro"
+    },
+    {
 			"path": "../apps/ku-ui/src",
       "name": "🚀 ku-ui",
       "settings": {

@@ -1,13 +1,13 @@
+import { MicroChannelEnum } from '@greedy-coin/types/micro';
 import { Controller, Get } from '@nestjs/common';
-
-import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
-
   @Get()
-  getData() {
-    return this.appService.getData();
+  helloWorld() {
+    return {
+      hello: 'world',
+      from: MicroChannelEnum.STATEMAN,
+    };
   }
 }

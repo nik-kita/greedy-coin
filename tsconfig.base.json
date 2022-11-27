@@ -31,22 +31,22 @@
         "libs/utils/src/index.ts"
       ],
       "@greedy-coin/types/utils": [
-        "libs/types/src/lib/utils"
+        "libs/types/src/lib/utils/index.ts"
       ],
       "@greedy-coin/types/common": [
-        "libs/types/src/lib/common"
+        "libs/types/src/lib/common/index.ts"
       ],
       "@greedy-coin/types/config": [
-        "libs/types/src/lib/config"
+        "libs/types/src/lib/config/index.ts"
       ],
       "@greedy-coin/types/state": [
-        "libs/types/src/lib/state"
+        "libs/types/src/lib/state/index.ts"
       ],
       "@greedy-coin/types/ws": [
-        "libs/types/src/lib/ws"
+        "libs/types/src/lib/ws/index.ts"
       ],
       "@greedy-coin/types/micro": [
-        "libs/types/src/lib/micro"
+        "libs/types/src/lib/micro/index.ts"
       ]
     }
   },

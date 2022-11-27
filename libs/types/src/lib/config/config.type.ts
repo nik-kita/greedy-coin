@@ -18,4 +18,12 @@ export type ConfigType = {
   MICRO_KU_API_HOST: string,
 
   MICRO_KU_API_PORT: number,
+
+  STATEMAN_HOST: string,
+
+  STATEMAN_PORT: number,
+
+  MICRO_STATEMAN_HOST: string,
+
+  MICRO_STATEMAN_PORT: number,
 }

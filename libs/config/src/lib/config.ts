@@ -41,4 +41,20 @@ export class Config implements ConfigType {
   @IsString()
   @IsNotEmpty()
   MICRO_KU_API_HOST = rawHost(this.KU_API_HOST);
+
+  @IsString()
+  @IsNotEmpty()
+  STATEMAN_HOST = localhost;
+
+  @Transform(({ value }) => +value)
+  @IsNumber()
+  STATEMAN_PORT = 4000;
+
+  @IsString()
+  @IsNotEmpty()
+  MICRO_STATEMAN_HOST = rawHost(this.STATEMAN_HOST);
+
+  @Transform(({ value }) => +value)
+  @IsNumber()
+  MICRO_STATEMAN_PORT = this.STATEMAN_PORT;
 }

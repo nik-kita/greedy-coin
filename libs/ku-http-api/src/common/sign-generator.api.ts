@@ -1,4 +1,4 @@
-import * as crypto from 'crypto';
+import * as crypto from 'crypto'; // TODO import from native node module
 import * as moment from 'moment';
 import * as QueryString from 'qs';
 import { MethodType } from '../enums/endpoint.enum';

@@ -1,4 +1,12 @@
 {
+  "settings": {
+    "workbench.colorTheme": "Default Light+",
+    "cSpell.words": [
+      "anny",
+      "nrwl",
+      "STATEMAN"
+    ]
+  },
 	"folders": [
     {
       "path": "..",
@@ -15,14 +23,7 @@
     {
 			"path": "../apps/ku-ui/src",
       "name": "🚀 ku-ui",
-      "settings": {
-
-      }
 		},
-    {
-      "path": "../libs/types/src",
-      "name": "📚 types"
-    },
     {
       "path": "../libs/ku-http-api/src",
       "name": "📚 ku-http-api"
@@ -34,14 +35,30 @@
     {
       "path": "../libs/utils/src",
       "name": "📚 utils"
-    }
+    },
+    {
+      "path": "../libs/types/src",
+      "name": "📚 types"
+    },
+    {
+      "path": "../libs/types/src/lib/micro",
+      "name": "📝 types/micro",
+    },
+    {
+      "path": "../libs/types/src/lib/config",
+      "name": "📝 types/config",
+    },
+    {
+      "path": "../libs/types/src/lib/common",
+      "name": "📝 types/common",
+    },
+    {
+      "path": "../libs/types/src/lib/ws",
+      "name": "📝 types/ws",
+    },
+    {
+      "path": "../libs/types/src/lib/utils",
+      "name": "📝 types/utils",
+    },
   ],
-  "settings": {
-    "workbench.colorTheme": "Default Light+",
-    "cSpell.words": [
-      "anny",
-      "nrwl",
-      "STATEMAN"
-    ]
-  }
 }

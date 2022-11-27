@@ -69,6 +69,7 @@
         "*.ts"
       ],
       "rules": {
+        "indent": ["error", 2],
         "semi": "error",
         "quotes": ["error", "single"],
         "object-curly-spacing": ["error", "always"],

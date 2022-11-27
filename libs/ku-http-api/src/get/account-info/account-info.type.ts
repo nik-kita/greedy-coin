@@ -10,7 +10,7 @@ export type AccountInfoResDto = [{
 }];
 
 export class AccountInfoParamsDto {
-    type?: 'main' | 'trade' | 'margin';
+  type?: 'main' | 'trade' | 'margin';
 
-    currency?: CurrencyType;
+  currency?: CurrencyType;
 }

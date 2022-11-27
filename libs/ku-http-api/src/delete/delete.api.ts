@@ -3,21 +3,21 @@ import { CancelAllOrdersParamsDto, CancelAllOrdersReq } from './cancel-order/can
 import { CancelOrderReq } from './cancel-order/cancel-order.delete.api';
 
 export class DeleteReq {
-    public static [DeleteEndpointEnum.CANCEL_ORDER] = {
+  public static [DeleteEndpointEnum.CANCEL_ORDER] = {
 
-        orderId(id: string) {
-            return new CancelOrderReq(id);
-        },
+    orderId(id: string) {
+      return new CancelOrderReq(id);
+    },
 
-    };
+  };
 
-    public static ['cancel/all/orders'] = {
-        setParams(params: CancelAllOrdersParamsDto) {
-            return new CancelAllOrdersReq(params);
-        },
+  public static ['cancel/all/orders'] = {
+    setParams(params: CancelAllOrdersParamsDto) {
+      return new CancelAllOrdersReq(params);
+    },
 
-        exec() {
-            return new CancelAllOrdersReq().exec();
-        },
-    };
+    exec() {
+      return new CancelAllOrdersReq().exec();
+    },
+  };
 }

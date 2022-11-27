@@ -2,7 +2,7 @@ import { WsSubjectEnum } from './enums/ws-subject.enum';
 import { WsSubscriptionType } from './enums/ws-subscription.type';
 import { WsPub } from './common/ws-pub';
 import { WsSubChannelTypeType } from './common/ws-sub-channel-type.type';
-import { CurrencyType } from '../currency.type';
+import { CurrencyType } from '../common/currency.type';
 
 type AccountBalanceTopicType = '/account/balance';
 
@@ -53,12 +53,12 @@ export type PubAccountBalance = {
 };
 
 export function publishAccountBalance(subscriptionType: WsSubscriptionType = 'subscribe'): PubAccountBalance {
-    return {
-        subject: WsSubjectEnum.ACCOUNT_BALANCE,
-        type: subscriptionType,
-        topic: '/account/balance',
-        privateChannel: true,
-    };
+  return {
+    subject: WsSubjectEnum.ACCOUNT_BALANCE,
+    type: subscriptionType,
+    topic: '/account/balance',
+    privateChannel: true,
+  };
 }
 
 export type AccountBalanceCPS = [WsSubjectEnum.ACCOUNT_BALANCE, WsPub<PubAccountBalance>, SubAccountBalance];

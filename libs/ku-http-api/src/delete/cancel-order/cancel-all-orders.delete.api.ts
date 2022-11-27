@@ -12,7 +12,7 @@ export type CancelAllOrdersParamsDto = {
 }
 
 export class CancelAllOrdersReq extends BaseMethod<CancelAllOrdersResDto, CancelAllOrdersParamsDto> {
-    constructor(params?: CancelAllOrdersParamsDto) {
-        super('DELETE', DeleteEndpointEnum.CANCEL_ALL_ORDERS, params);
-    }
+  constructor(params?: CancelAllOrdersParamsDto) {
+    super('DELETE', DeleteEndpointEnum.CANCEL_ALL_ORDERS, params);
+  }
 }

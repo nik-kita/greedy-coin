@@ -3,63 +3,63 @@ export type OrderInfoParamsDto = {
 }
 
 export class OrderInfoResDto {
-    orderId!: string;
+  orderId!: string;
 
-    symbol!: string;
+  symbol!: string;
 
-    opType!: 'DEAL' | 'CANCEL';
+  opType!: 'DEAL' | 'CANCEL';
 
-    type!: 'limit' | 'market' | 'stop_limit' | 'stop_market';
+  type!: 'limit' | 'market' | 'stop_limit' | 'stop_market';
 
-    side!: 'buy' | 'sell';
+  side!: 'buy' | 'sell';
 
-    price!: string;
+  price!: string;
 
-    size!: string;
+  size!: string;
 
-    funds!: string;
+  funds!: string;
 
-    dealFunds!: string;
+  dealFunds!: string;
 
-    dealSize!: string;
+  dealSize!: string;
 
-    fee!: string;
+  fee!: string;
 
-    feeCurrency!: string;
+  feeCurrency!: string;
 
-    stp!: 'CN' | 'CO' | 'DC' | 'CB' | '';
+  stp!: 'CN' | 'CO' | 'DC' | 'CB' | '';
 
-    stop!: 'entry' | 'loss' | '';
+  stop!: 'entry' | 'loss' | '';
 
-    stopTriggered!: boolean;
+  stopTriggered!: boolean;
 
-    stopPrice!: string;
+  stopPrice!: string;
 
-    timeInForce!: 'GTC' | 'GTT' | 'IOC' | 'FOK';
+  timeInForce!: 'GTC' | 'GTT' | 'IOC' | 'FOK';
 
-    postOnly!: boolean;
+  postOnly!: boolean;
 
-    hidden!: boolean;
+  hidden!: boolean;
 
-    iceberg!: boolean;
+  iceberg!: boolean;
 
-    visibleSize!: string;
+  visibleSize!: string;
 
-    cancelAfter!: number;
+  cancelAfter!: number;
 
-    channel!: string;
+  channel!: string;
 
-    clientOid!: string;
+  clientOid!: string;
 
-    remark?: string;
+  remark?: string;
 
-    tags!: string;
+  tags!: string;
 
-    isActive!: boolean;
+  isActive!: boolean;
 
-    cancelExist!: boolean;
+  cancelExist!: boolean;
 
-    createdAt!: Date;
+  createdAt!: Date;
 
-    tradeType!: 'TRADE' | 'MARGIN_TRADE';
+  tradeType!: 'TRADE' | 'MARGIN_TRADE';
 }

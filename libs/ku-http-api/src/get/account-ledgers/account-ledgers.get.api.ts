@@ -15,19 +15,19 @@ export type AccountLedgersParamsDto = {
 }
 
 export class GetAccountLedgersReq extends BaseMethod<AccountLedgersResDto, AccountLedgersParamsDto> {
-    constructor(
-        params?: AccountLedgersParamsDto,
-    ) {
-        super(
-            'GET',
-            GetEndpointEnum.ACCOUNT_LEDGERS,
-            params,
-        );
-    }
+  constructor(
+    params?: AccountLedgersParamsDto,
+  ) {
+    super(
+      'GET',
+      GetEndpointEnum.ACCOUNT_LEDGERS,
+      params,
+    );
+  }
 
-    public setParams(params: AccountLedgersParamsDto): this {
-        super.setParams(params);
+  public setParams(params: AccountLedgersParamsDto): this {
+    super.setParams(params);
 
-        return this;
-    }
+    return this;
+  }
 }

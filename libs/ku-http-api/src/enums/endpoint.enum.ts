@@ -23,7 +23,7 @@ export enum DeleteEndpointEnum {
 }
 
 export const HOST = NODE_ENV === 'production'
-    ? 'https://api.kucoin.com' as const
-    : 'https://openapi-sandbox.kucoin.com' as const;
+  ? 'https://api.kucoin.com' as const
+  : 'https://openapi-sandbox.kucoin.com' as const;
 
 export type MethodType = 'GET' | 'POST' | 'DELETE';

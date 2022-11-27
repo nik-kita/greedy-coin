@@ -15,7 +15,7 @@ describe('AppService', () => {
 
   describe('getData', () => {
     it('should return "Welcome to stateman-micro!"', () => {
-      expect(service.getData()).toEqual({message: 'Welcome to stateman-micro!'});
+      expect(service.getData()).toEqual({ message: 'Welcome to stateman-micro!' });
     });
   });
 });

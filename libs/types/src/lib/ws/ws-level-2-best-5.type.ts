@@ -2,7 +2,7 @@ import { WsSubjectEnum } from './enums/ws-subject.enum';
 import { WsSubscriptionType } from './enums/ws-subscription.type';
 import { WsPub } from './common/ws-pub';
 import { WsSub } from './common/ws-sub';
-import { CurrencyPair } from '../currency.type';
+import { CurrencyPair } from '../common/currency.type';
 
 const level2with5best = '/spotMarket/level2Depth5:' as const;
 const level2with50best = '/spotMarket/level2Depth50:' as const;
@@ -37,23 +37,23 @@ export type SubLevel2Best50 = Omit<SubLevel2Best5, 'topic' | 'subject'> & {
 }
 
 export function publishLevel2Best5(
-    coins: [CurrencyPair, ...CurrencyPair[]],
-    subsciptionType: WsSubscriptionType = 'subscribe',
+  coins: [CurrencyPair, ...CurrencyPair[]],
+  subsciptionType: WsSubscriptionType = 'subscribe',
 ): PubLevel2BestMarketData {
-    return {
-        type: subsciptionType,
-        topic: generateLevel2BestUrl5(coins),
-    };
+  return {
+    type: subsciptionType,
+    topic: generateLevel2BestUrl5(coins),
+  };
 }
 
 export function publishLevel2Best50(
-    coins: [CurrencyPair, ...CurrencyPair[]],
-    subsciptionType: WsSubscriptionType = 'subscribe',
+  coins: [CurrencyPair, ...CurrencyPair[]],
+  subsciptionType: WsSubscriptionType = 'subscribe',
 ): PubLevel2BestMarketData {
-    return {
-        type: subsciptionType,
-        topic: generateLevel2BestUrl50(coins),
-    };
+  return {
+    type: subsciptionType,
+    topic: generateLevel2BestUrl50(coins),
+  };
 }
 
 export type Level2Best5CPS = [WsSubjectEnum.LEVEL2, WsPub<PubLevel2BestMarketData>, SubLevel2Best5];

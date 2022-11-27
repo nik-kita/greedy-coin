@@ -2,7 +2,7 @@ import { WsSubjectEnum } from './enums/ws-subject.enum';
 import { WsSubscriptionType } from './enums/ws-subscription.type';
 import { WsPub } from './common/ws-pub';
 import { WsSub } from './common/ws-sub';
-import { CurrencyPair } from '../currency.type';
+import { CurrencyPair } from '../common/currency.type';
 
 const marketDataLevel2 = '/market/level2:' as const;
 type MarketDataLevel2Url = `${typeof marketDataLevel2}${string}`;
@@ -29,10 +29,10 @@ export type SubLevel2MarketData = WsSub<{
 }>;
 
 export function publishLevel2MarketData(coins: [CurrencyPair, ...CurrencyPair[]], subsciptionType: WsSubscriptionType = 'subscribe'): PubLevel2MarketData {
-    return {
-        type: subsciptionType,
-        topic: generateMarketLevel2Url(coins),
-    };
+  return {
+    type: subsciptionType,
+    topic: generateMarketLevel2Url(coins),
+  };
 }
 
 export type Level2MarketBookCPS = [WsSubjectEnum.TRADE_L2UPDATE, WsPub<PubLevel2MarketData>, SubLevel2MarketData];

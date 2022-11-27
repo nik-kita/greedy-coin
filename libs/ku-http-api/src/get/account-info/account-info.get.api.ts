@@ -4,19 +4,19 @@ import { GetEndpointEnum } from '../../enums/endpoint.enum';
 import { AccountInfoParamsDto, AccountInfoResDto } from './account-info.type';
 
 export class GetAccountsReq extends BaseMethod<AccountInfoResDto, AccountInfoParamsDto> {
-    constructor(
-        params?: object,
-    ) {
-        super(
-            'GET',
-            GetEndpointEnum.ACCOUNTS,
-            params,
-        );
-    }
+  constructor(
+    params?: object,
+  ) {
+    super(
+      'GET',
+      GetEndpointEnum.ACCOUNTS,
+      params,
+    );
+  }
 
-    public setParams(params: AccountInfoParamsDto) {
-        super.setParams(params);
+  public setParams(params: AccountInfoParamsDto) {
+    super.setParams(params);
 
-        return this;
-    }
+    return this;
+  }
 }

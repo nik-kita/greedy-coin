@@ -1,5 +1,5 @@
-import { Transport } from "@nestjs/microservices";
-import { ConfigType } from "../config";
+import { Transport } from '@nestjs/microservices';
+import { ConfigType } from '../config';
 
 export type MicroMapperType = {
   connection: {

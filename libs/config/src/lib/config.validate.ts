@@ -1,4 +1,4 @@
-import { anny } from '@greedy-coin/types';
+import { anny } from '@greedy-coin/types/utils';
 import { plainToInstance } from 'class-transformer';
 import { validateSync } from 'class-validator';
 import { Config } from './config';

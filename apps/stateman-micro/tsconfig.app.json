@@ -7,7 +7,7 @@
       "node"
     ],
     "emitDecoratorMetadata": true,
-    "target": "es2015"
+    "target": "ES2021"
   },
   "exclude": [
     "jest.config.ts",

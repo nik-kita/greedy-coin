@@ -27,6 +27,9 @@
       "@greedy-coin/ku-ws-api": [
         "libs/ku-ws-api/src/index.ts"
       ],
+      "@greedy-coin/utils": [
+        "libs/utils/src/index.ts"
+      ],
       "@greedy-coin/types/utils": [
         "libs/types/src/lib/utils"
       ],
@@ -42,8 +45,8 @@
       "@greedy-coin/types/ws": [
         "libs/types/src/lib/ws"
       ],
-      "@greedy-coin/utils": [
-        "libs/utils/src/index.ts"
+      "@greedy-coin/types/micro": [
+        "libs/types/src/lib/micro"
       ]
     }
   },

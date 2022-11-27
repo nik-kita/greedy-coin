@@ -10,4 +10,12 @@ export type ConfigType = {
   API_SECRET: string;
 
   ENV_COLOR: EnvColor;
+
+  KU_API_HOST: string,
+
+  KU_API_PORT: number,
+
+  MICRO_KU_API_HOST: string,
+
+  MICRO_KU_API_PORT: number,
 }

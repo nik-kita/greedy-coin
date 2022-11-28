@@ -4,14 +4,14 @@ import { EventPattern, Payload } from '@nestjs/microservices';
 
 @Controller()
 export class StatemanListener implements IStatemanListener {
-  @EventPattern()
+  @EventPattern('hello')
   hello(
     @Payload() name: string,
   ) {
     this.logger.debug(`hello, ${name}`);
   }
 
-  @EventPattern()
+  @EventPattern('ok')
   ok() {
     this.logger.debug('ok, google!');
   }

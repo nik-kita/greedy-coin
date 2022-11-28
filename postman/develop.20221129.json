@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "497c32b1-0035-4773-bba7-71370a6b7afb",
+		"name": "develop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20668122"
+	},
+	"item": [
+		{
+			"name": "hello world",
+			"item": [
+				{
+					"name": "ku-api | hello world",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ku-api host}}:{{ku-api port}}/_/hello-world",
+							"host": [
+								"{{ku-api host}}"
+							],
+							"port": "{{ku-api port}}",
+							"path": [
+								"_",
+								"hello-world"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ku-api => stateman_micro | test hi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ku-api host}}:{{ku-api port}}/_/say-hi/nemo",
+							"host": [
+								"{{ku-api host}}"
+							],
+							"port": "{{ku-api port}}",
+							"path": [
+								"_",
+								"say-hi",
+								"nemo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "stateman | hello world",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{stateman host}}:{{stateman port}}/_/hello-world",
+							"host": [
+								"{{stateman host}}"
+							],
+							"port": "{{stateman port}}",
+							"path": [
+								"_",
+								"hello-world"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "ku-api host",
+			"value": "{{_KU_API_HOST localhost}}",
+			"type": "string"
+		},
+		{
+			"key": "ku-api port",
+			"value": "{{_KU_API_PORT 3000}}",
+			"type": "string"
+		},
+		{
+			"key": "stateman host",
+			"value": "{{_STATEMAN_HOST localhost}}",
+			"type": "string"
+		},
+		{
+			"key": "stateman port",
+			"value": "{{_STATEMAN_PORT 4000}}",
+			"type": "string"
+		},
+		{
+			"key": "_KU_API_HOST localhost",
+			"value": "http://localhost",
+			"type": "string"
+		},
+		{
+			"key": "_KU_API_PORT 3000",
+			"value": "3000",
+			"type": "string"
+		},
+		{
+			"key": "_STATEMAN_HOST localhost",
+			"value": "http://localhost",
+			"type": "string"
+		},
+		{
+			"key": "_STATEMAN_PORT 4000",
+			"value": "4000",
+			"type": "string"
+		},
+		{
+			"key": "_STATEMAN_PORT 4444",
+			"value": "4444",
+			"type": "string"
+		}
+	]
+}

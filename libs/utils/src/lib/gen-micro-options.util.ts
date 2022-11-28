@@ -3,13 +3,15 @@ import { ConfigType } from '@greedy-coin/types/config';
 import { ConfigService } from '@nestjs/config';
 import { Transport } from '@nestjs/microservices';
 
-export function genMicroConnectionOptions(micro: MicroChannelEnum, config: ConfigService<ConfigType>): {
+type MicroServiceConnectionOptions = {
   transport: Transport,
   options: {
     host: string,
     port: number,
   },
-} {
+};
+
+export function genMicroServiceOptions(micro: MicroChannelEnum, config: ConfigService<ConfigType>): MicroServiceConnectionOptions {
   const { host, port, transport } = MicroConnectionOptionsMapper[micro];
 
   return {

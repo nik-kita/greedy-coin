@@ -1,6 +1,6 @@
 import { ConfigType } from '@greedy-coin/types/config';
 import { MicroChannelEnum } from '@greedy-coin/types/micro';
-import { genMicroConnectionOptions } from '@greedy-coin/utils';
+import { genMicroServiceOptions } from '@greedy-coin/utils';
 import { Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
@@ -13,7 +13,7 @@ async function bootstrap() {
   const host = config.get('KU_API_HOST');
   const port = config.get('KU_API_PORT');
 
-  app.connectMicroservice(genMicroConnectionOptions(MicroChannelEnum.KU_API, config));
+  app.connectMicroservice(genMicroServiceOptions(MicroChannelEnum.KU_API, config));
 
   await app.startAllMicroservices();
   logger.debug(`Start ${MicroChannelEnum.KU_API} microservice`);

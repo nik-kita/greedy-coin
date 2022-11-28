@@ -1,6 +1,6 @@
 import { ConfigType } from '@greedy-coin/types/config';
 import { MicroChannelEnum } from '@greedy-coin/types/micro';
-import { genMicroConnectionOptions } from '@greedy-coin/utils';
+import { genMicroServiceOptions } from '@greedy-coin/utils';
 import { Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
@@ -13,7 +13,7 @@ async function bootstrap() {
   const host = config.get('STATEMAN_HOST');
   const port = config.get('STATEMAN_PORT');
 
-  app.connectMicroservice(genMicroConnectionOptions(MicroChannelEnum.STATEMAN, config));
+  app.connectMicroservice(genMicroServiceOptions(MicroChannelEnum.STATEMAN, config));
 
   await app.startAllMicroservices();
   logger.debug(`Start ${MicroChannelEnum.STATEMAN} microservice`);

@@ -1,4 +1,4 @@
-import { MicroChannelEnum, MicroMapper } from '@greedy-coin/types/micro';
+import { MicroChannelEnum, MicroConnectionOptionsMapper } from '@greedy-coin/types/micro';
 import { ConfigType } from '@greedy-coin/types/config';
 import { ConfigService } from '@nestjs/config';
 import { Transport } from '@nestjs/microservices';
@@ -10,7 +10,7 @@ export function genMicroConnectionOptions(micro: MicroChannelEnum, config: Confi
     port: number,
   },
 } {
-  const { host, port, transport } = MicroMapper[micro].connection;
+  const { host, port, transport } = MicroConnectionOptionsMapper[micro];
 
   return {
     transport,

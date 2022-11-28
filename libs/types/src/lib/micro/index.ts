@@ -1,2 +1,3 @@
 export * from './micro-channel.enum';
-export * from './micro-mapper.const';
+export * from './connection-options/micro-connection-options.type';
+export * from './connection-options/micro-connection-options.const';

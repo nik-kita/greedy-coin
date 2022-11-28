@@ -1,13 +1,8 @@
-import { ValueByKeyType } from '../../utils';
+import { OverrideMicroClient } from '../common/override-micro-client.type';
 
 export interface IStatemanListener {
   hello(name: string): void;
+  ok(): void;
 }
 
-export type IStatemanMicro<
-  T extends 'pattern' | 'arg' | 'result', K extends keyof IStatemanListener
-> = ValueByKeyType<{
-  pattern: K,
-  arg: Parameters<IStatemanListener[K]>[0],
-  result: ReturnType<IStatemanListener[K]>,
-}, T>;
+export type StatemanClient = OverrideMicroClient<IStatemanListener>;

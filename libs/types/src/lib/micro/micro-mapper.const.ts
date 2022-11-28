@@ -10,6 +10,7 @@ export const MicroMapper: Record<MicroChannelEnum, MicroMapperType> = {
       host: 'MICRO_KU_API_HOST',
       port: 'MICRO_KU_API_PORT',
     },
+    patterns: {},
   },
   [MicroChannelEnum.STATEMAN]: {
     connection: {
@@ -17,7 +18,9 @@ export const MicroMapper: Record<MicroChannelEnum, MicroMapperType> = {
       host: 'MICRO_STATEMAN_HOST',
       port: 'MICRO_STATEMAN_PORT',
     },
+    patterns: {},
   },
-} as const;
+};
 
 export const MicroKuApi = MicroMapper[MicroChannelEnum.KU_API];
+export const MicroStateman = MicroMapper[MicroChannelEnum.STATEMAN];

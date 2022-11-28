@@ -28,6 +28,10 @@
       "name": "📚 ku-http-api"
     },
     {
+      "path": "../libs/ku-ws-api/src",
+      "name": "📚 ku-ws-api"
+    },
+    {
       "path": "../libs/config/src",
       "name": "📚 config"
     },

@@ -1,11 +1,11 @@
-import { MicroChannelEnum, StatemanClient } from '@greedy-coin/types/micro';
+import { Listener, MicroChannelEnum } from '@greedy-coin/types/micro';
 import { Inject, Injectable, Logger, OnApplicationBootstrap } from '@nestjs/common';
 
 @Injectable()
 export class AppService implements OnApplicationBootstrap {
 
   constructor(
-    @Inject(MicroChannelEnum.STATEMAN) private stateman: StatemanClient,
+    @Inject(MicroChannelEnum.STATEMAN) private stateman: Listener<MicroChannelEnum.STATEMAN>,
   ) { }
 
   testHi(name: string) {

@@ -1,4 +1,4 @@
-import { OverrideMicroClient } from '../common/override-micro-client.type';
+import { OverrideMicroClient } from './override-micro-client.type';
 
 export interface IStatemanListener {
   hello(name: string): void;

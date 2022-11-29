@@ -65,5 +65,9 @@
       "path": "../libs/types/src/lib/utils",
       "name": "📝 types/utils",
     },
+    {
+      "path": "../libs/types/src/lib/state",
+      "name": "📝 types/state",
+    },
   ],
 }

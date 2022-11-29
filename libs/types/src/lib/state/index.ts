@@ -1,2 +1,2 @@
 export * from './root-state.type';
-export * from './state-action-route.enum';
+export * from './action-name.enum';

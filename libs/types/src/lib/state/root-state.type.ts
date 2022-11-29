@@ -1,4 +1,6 @@
-export type RootStateType = {
+import { configureStore } from '@reduxjs/toolkit';
+
+export type RootState = {
   hello: {
     from: {
       message: string,
@@ -6,5 +8,6 @@ export type RootStateType = {
     }[],
   },
 };
+export type AppDispatch = ReturnType<typeof configureStore<RootState>>['dispatch'];
 
-export type StateHelloType = RootStateType['hello'];
+export type StateHelloType = RootState['hello'];

@@ -1,4 +1,4 @@
-import { RootStateType, StateActionRoute, StateHelloType } from '@greedy-coin/types/state';
+import { RootState, SliceName, StateHelloType } from '@greedy-coin/types/state';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 const initialState: StateHelloType = {
@@ -6,7 +6,7 @@ const initialState: StateHelloType = {
 };
 
 export const helloSlice = createSlice({
-  name: StateActionRoute.HELLO,
+  name: SliceName.HELLO,
   initialState,
   reducers: {
     hi(state, { payload }: PayloadAction<StateHelloType['from'][number]>) {
@@ -23,4 +23,4 @@ export const helloSlice = createSlice({
 
 export const { hi, } = helloSlice.actions;
 export const helloReducer = helloSlice.reducer;
-export const selectHello = (state: RootStateType) => state.hello;
+export const selectHello = (state: RootState) => state.hello;

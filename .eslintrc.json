@@ -49,7 +49,7 @@
       "rules": {
         "no-restricted-imports": "off",
         "@typescript-eslint/no-restricted-imports": [
-          "warn",
+          "error",
           {
             "name": "react-redux",
             "importNames": [

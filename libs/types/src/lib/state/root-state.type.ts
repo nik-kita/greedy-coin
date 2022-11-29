@@ -1,3 +1,10 @@
 export type RootStateType = {
-  // TODO
-}
+  hello: {
+    from: {
+      message: string,
+      from: string,
+    }[],
+  },
+};
+
+export type StateHelloType = RootStateType['hello'];

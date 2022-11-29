@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "preserveSymlinks": true,
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,

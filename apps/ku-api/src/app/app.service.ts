@@ -12,10 +12,6 @@ export class AppService implements OnApplicationBootstrap {
     this.stateman.emit('hello', name);
   }
 
-  testOk() {
-    this.stateman.emit('ok');
-  }
-
   async onApplicationBootstrap() {
     await this.stateman.connect();
 

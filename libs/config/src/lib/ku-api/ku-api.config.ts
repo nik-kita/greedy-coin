@@ -6,4 +6,6 @@ export class KuApiConfig extends PickType(FullConfig, [
   'KU_API_PORT',
   'MICRO_KU_API_HOST',
   'MICRO_KU_API_PORT',
+  'MICRO_STATEMAN_HOST',
+  'MICRO_STATEMAN_PORT',
 ]) { }

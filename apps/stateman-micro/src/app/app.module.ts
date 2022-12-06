@@ -1,10 +1,10 @@
-import { ProjectConfigByNestSystem } from '@greedy-coin/config';
+import { StatemanMicroConfigModule } from '@greedy-coin/config';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { StatemanListener } from './stateman.listener';
 
 @Module({
-  imports: [ProjectConfigByNestSystem()],
+  imports: [StatemanMicroConfigModule],
   controllers: [
     AppController,
     StatemanListener,

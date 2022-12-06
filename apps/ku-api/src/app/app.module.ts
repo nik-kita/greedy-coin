@@ -1,23 +1,26 @@
-import { ProjectConfigByNestSystem } from '@greedy-coin/config';
-import { ConfigType } from '@greedy-coin/types/config';
+import { KuApiConfig, KuApiConfigModule } from '@greedy-coin/config';
 import { MicroChannelEnum } from '@greedy-coin/types/micro';
-import { anny } from '@greedy-coin/types/utils';
-import { genMicroServiceOptions } from '@greedy-coin/utils';
 import { Module } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { ClientsModule } from '@nestjs/microservices';
+import { ClientsModule, Transport } from '@nestjs/microservices';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 @Module({
   imports: [
-    ProjectConfigByNestSystem(),
+    KuApiConfigModule,
     ClientsModule.registerAsync([
       {
         inject: [ConfigService],
         name: MicroChannelEnum.STATEMAN,
-        useFactory(config: ConfigService<ConfigType>) {
-          return genMicroServiceOptions(MicroChannelEnum.STATEMAN, config) as anny; // TODO
+        useFactory(config: ConfigService<KuApiConfig>) {
+          return {
+            transport: Transport.TCP,
+            options: {
+              host: config.get('MICRO_STATEMAN_HOST'),
+              port: config.get('MICRO_STATEMAN_PORT'),
+            },
+          };
         },
       }
     ])

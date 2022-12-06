@@ -1,8 +1,8 @@
 import { Transport } from '@nestjs/microservices';
-import { ConfigType } from '../../config';
+import { FullConfigType } from '../../config';
 
 export type MicroConnectionOptionsType = {
   transport: Transport,
-  host: keyof ConfigType & `MICRO_${string}_HOST`,
-  port: keyof ConfigType & `MICRO_${string}_PORT`,
+  host: keyof FullConfigType & `MICRO_${string}_HOST`,
+  port: keyof FullConfigType & `MICRO_${string}_PORT`,
 };

@@ -1,25 +1,28 @@
-import { ConfigType } from '@greedy-coin/types/config';
-import { MicroChannelEnum } from '@greedy-coin/types/micro';
-import { genMicroServiceOptions } from '@greedy-coin/utils';
+import { StatemanMicroConfig, StatemanMicroConfigModule } from '@greedy-coin/config';
 import { Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
+import { TcpOptions } from '@nestjs/microservices';
 import { AppModule } from './app/app.module';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
   const logger = new Logger('STATEMAN::main');
-  const config = app.get<ConfigService<ConfigType>>(ConfigService);
-  const host = config.get('STATEMAN_HOST');
-  const port = config.get('STATEMAN_PORT');
+  const pseudoApp = await NestFactory.create(StatemanMicroConfigModule);
+  const config = pseudoApp.get<ConfigService<StatemanMicroConfig>>(ConfigService);
 
-  app.connectMicroservice(genMicroServiceOptions(MicroChannelEnum.STATEMAN, config));
+  await pseudoApp.close();
 
-  await app.startAllMicroservices();
-  logger.debug(`Start ${MicroChannelEnum.STATEMAN} microservice`);
+  const host = config.get('MICRO_STATEMAN_HOST');
+  const port = config.get('MICRO_STATEMAN_PORT');
+  const app = await NestFactory.createMicroservice<TcpOptions>(AppModule, {
+    options: {
+      host,
+      port,
+    },
+  });
 
-  await app.listen(port);
-  logger.debug(`Server listen ${host}:${port}`);
+  await app.listen();
+  logger.debug(`${host}:${port}`);
 }
 
 bootstrap();

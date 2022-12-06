@@ -1,6 +1,4 @@
-import { EnvColor } from './env-color.enum';
-
-export type ConfigType = {
+export type FullConfigType = {
   NODE_ENV: 'development' | 'production';
 
   API_PASSPHRASE: string;
@@ -8,8 +6,6 @@ export type ConfigType = {
   API_KEY: string;
 
   API_SECRET: string;
-
-  ENV_COLOR: EnvColor;
 
   KU_API_HOST: string,
 

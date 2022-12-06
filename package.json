@@ -51,6 +51,7 @@
     "@angular/compiler-cli": "~14.2.8",
     "@angular/language-service": "~14.2.8",
     "@nestjs/config": "^2.2.0",
+    "@nestjs/mapped-types": "^1.2.0",
     "@nestjs/microservices": "^9.1.6",
     "@nestjs/schematics": "^9.0.3",
     "@nestjs/testing": "^9.1.6",

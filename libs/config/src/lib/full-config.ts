@@ -1,19 +1,22 @@
-import { ConfigType, EnvColor } from '@greedy-coin/types/config';
+import { FullConfigType } from '@greedy-coin/types/config';
 import { rawHost } from '@greedy-coin/utils';
 import { Transform } from 'class-transformer';
-import { IsIn, IsNotEmpty, IsNumber, IsString } from 'class-validator';
+import { IsArray, IsIn, IsNotEmpty, IsNumber, IsString } from 'class-validator';
 
 const localhost = 'http://0.0.0.0' as const;
 
-export class FullConfig implements ConfigType {
-  @IsIn(Object.values(EnvColor))
-  ENV_COLOR!: EnvColor;
-
+export class FullConfig implements FullConfigType {
   @IsIn([
     'development',
     'production',
   ])
   NODE_ENV!: 'development' | 'production';
+
+  @Transform(({ value }) => value?.split(' '))
+  @IsArray()
+  @IsString({ each: true })
+  @IsNotEmpty({ each: true })
+  ENV_FILES = ['.env'];
 
   @IsString()
   @IsNotEmpty()
@@ -37,11 +40,11 @@ export class FullConfig implements ConfigType {
 
   @Transform(({ value }) => +value)
   @IsNumber()
-  MICRO_KU_API_PORT = this.KU_API_PORT;
+  MICRO_KU_API_PORT = 3000;
 
   @IsString()
   @IsNotEmpty()
-  MICRO_KU_API_HOST = rawHost(this.KU_API_HOST);
+  MICRO_KU_API_HOST = rawHost(localhost);
 
   @IsString()
   @IsNotEmpty()
@@ -53,9 +56,9 @@ export class FullConfig implements ConfigType {
 
   @IsString()
   @IsNotEmpty()
-  MICRO_STATEMAN_HOST = rawHost(this.STATEMAN_HOST);
+  MICRO_STATEMAN_HOST = rawHost(localhost);
 
   @Transform(({ value }) => +value)
   @IsNumber()
-  MICRO_STATEMAN_PORT = this.STATEMAN_PORT;
+  MICRO_STATEMAN_PORT = 4000;
 }

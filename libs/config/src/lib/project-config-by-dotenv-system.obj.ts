@@ -1,5 +1,5 @@
 import { configValidate } from './config.validate';
-import { Config } from './config';
+import { FullConfig } from './full-config';
 import { config } from 'dotenv';
 import { getPathToEnv } from './get-path-to-env';
 
@@ -7,5 +7,5 @@ import { getPathToEnv } from './get-path-to-env';
 export const ProjectConfigByDotenvSystem = (envPath?: string) => {
   config({ path: envPath || getPathToEnv() });
 
-  return configValidate(process.env) as Config;
+  return configValidate(process.env) as FullConfig;
 };

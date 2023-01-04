@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "../../dist/out-tsc",
+/**
+See issue:
+https://github.com/nik-kita/greedy-coin/issues/1#issue-1467329573
+**/
+    "declaration": false, // important
+    // "strict": true, // important
+/**
+===============================================================
+ **/
+    "types": ["node"]
+  },
+  "exclude": ["jest.config.ts", "**/*.spec.ts", "**/*.test.ts"],
+  "include": ["**/*.ts"]
+}

@@ -1,0 +1,75 @@
+{
+  "settings": {
+    "cSpell.words": [
+      "anny",
+      "nrwl",
+      "STATEMAN"
+    ]
+  },
+	"folders": [
+    {
+      "path": "..",
+      "name": "👑 root"
+    },
+		{
+			"path": "../apps/ku-api/src",
+      "name": "🚀 ku-api",
+		},
+    {
+      "path": "../apps/stateman-micro",
+      "name": "📯 stateman-micro"
+    },
+    {
+			"path": "../apps/ku-ui/src",
+      "name": "🚀 ku-ui",
+		},
+    {
+      "path": "../libs/ku-http-api/src",
+      "name": "📚 ku-http-api"
+    },
+    {
+      "path": "../libs/ku-ws-api/src",
+      "name": "📚 ku-ws-api"
+    },
+    {
+      "path": "../libs/config/src",
+      "name": "📚 config"
+    },
+    {
+      "path": "../libs/utils/src",
+      "name": "📚 utils"
+    },
+    {
+      "path": "../libs/state/src",
+      "name": "📚 state"
+    },
+    {
+      "path": "../libs/types/src",
+      "name": "📚 types"
+    },
+    {
+      "path": "../libs/types/src/lib/micro",
+      "name": "📝 types/micro",
+    },
+    {
+      "path": "../libs/types/src/lib/config",
+      "name": "📝 types/config",
+    },
+    {
+      "path": "../libs/types/src/lib/common",
+      "name": "📝 types/common",
+    },
+    {
+      "path": "../libs/types/src/lib/ws",
+      "name": "📝 types/ws",
+    },
+    {
+      "path": "../libs/types/src/lib/utils",
+      "name": "📝 types/utils",
+    },
+    {
+      "path": "../libs/types/src/lib/state",
+      "name": "📝 types/state",
+    },
+  ],
+}
